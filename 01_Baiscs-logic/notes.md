@@ -549,3 +549,88 @@ console.log(x);   // 4
 ## 🎯 Summary:
 - Pre (`++x` / `--x`): First change the value, then use it.
 - Post (`x++` / `x--`): First use the value, then change it.
+
+---
+
+# 📌 Topic: `Math` Methods in JavaScript
+## ❓ What are they?
+JavaScript's built-in `Math` object provides utility functions for mathematical operations like rounding, generating random numbers, powers, roots, etc.
+
+## ❓ What do they do?
+They help you:
+  - Perform rounding
+  - Get square/cube roots
+  - Generate random numbers
+  - Find max/min values
+  - Work with decimal precision
+
+## 🎲 Generating Random Numbers
+```js
+let rand = Math.random(); 
+console.log(rand);                    // Random number between 0 and 1
+console.log(rand * 9000);            // Scaled between 0 and 9000
+console.log((rand * 9000) + 1000);   // Scaled between 1000 and 9999
+console.log(Math.trunc((rand * 9000) + 1000)); // Truncated to integer
+```
+  **Use Case:** For generating random OTPs, unique IDs, or simulating random behavior in programs.
+
+## 🔁 Rounding Numbers
+```js
+console.log(Math.round(10.5)); // 11 (nearest integer)
+console.log(Math.ceil(10.1));  // 11 (round up)
+console.log(Math.floor(10.8)); // 10 (round down)
+console.log(Math.trunc(18.98)); // 18 (removes decimal, no rounding)
+```
+
+| Method         | Description            |
+| -------------- | ---------------------- |
+| `Math.round()` | Nearest integer        |
+| `Math.ceil()`  | Always rounds up       |
+| `Math.floor()` | Always rounds down     |
+| `Math.trunc()` | Drops the decimal part |
+
+## 📐 Powers and Roots
+```js
+console.log(Math.pow(2, 3));    // 8 (2^3)
+console.log(Math.sqrt(55));     // Square root of 55
+console.log(Math.cbrt(55));     // Cube root of 55
+console.log(Math.cbrt(2));      // Cube root of 2
+console.log(Math.cbrt(2.8));    // Cube root of 2.8
+console.log(Math.cbrt(4));      // Cube root of 4
+```
+
+## ➕ Absolute Values
+```js
+console.log(Math.abs(-15));  // 15
+console.log(Math.abs(15));   // 15
+```
+
+## 📊 Max and Min Values
+```js
+console.log(Math.max(15, 78, 55)); // 78
+console.log(Math.min(15, 78, 55)); // 15
+```
+
+## 📏 Decimal Formatting
+```js
+let a = 85.05756;
+
+console.log(a.toFixed(3));        // '85.058' (returns string with 3 decimals)
+console.log(typeof a.toFixed(2)); // 'string'
+```
+  **Note:** `toFixed()` returns a **string**, not a number.
+
+## 🧠 Summary – When to Use What?
+| Function           | Use For                                |
+| ------------------ | -------------------------------------- |
+| `Math.random()`    | Generate random numbers                |
+| `Math.round()`     | Round to nearest integer               |
+| `Math.ceil()`      | Always round up                        |
+| `Math.floor()`     | Always round down                      |
+| `Math.trunc()`     | Remove decimals without rounding       |
+| `Math.pow()`       | Raise a number to a power              |
+| `Math.sqrt()`      | Square root                            |
+| `Math.cbrt()`      | Cube root                              |
+| `Math.abs()`       | Get positive version of number         |
+| `Math.max()/min()` | Get highest/lowest value from list     |
+| `toFixed(n)`       | Round to `n` decimals (returns string) |

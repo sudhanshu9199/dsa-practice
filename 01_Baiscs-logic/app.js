@@ -96,3 +96,31 @@
 // x = 5;
 // console.log(x--); // 5
 // console.log(x); // 4
+
+
+
+let rand = Math.random();
+console.log(rand);
+console.log(rand * 9000);
+console.log((rand * 9000)+1000);
+console.log(Math.trunc((rand * 9000)+1000));
+
+console.log(Math.round(10.5));
+console.log(Math.ceil(10.1));
+console.log(Math.floor(10.8));
+console.log(Math.trunc(18.98));
+console.log(Math.pow(2,3));
+console.log(Math.sqrt(55));
+console.log(Math.abs(-15));
+console.log(Math.abs(15));
+console.log(Math.max(15,78,55));
+console.log(Math.min(15,78,55));
+console.log(Math.cbrt(55));
+console.log(Math.cbrt(1));
+console.log(Math.cbrt(2));
+console.log(Math.cbrt(2.8));
+console.log(Math.cbrt(4));
+
+let a = 85.05756
+console.log(a.toFixed(3))
+console.log(typeof a.toFixed(2))
