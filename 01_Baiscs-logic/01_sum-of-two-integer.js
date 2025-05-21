@@ -67,4 +67,5 @@ let j = --(i++);
  */
 // // Formula: c = 2 * pi * radius
 // let r = 12;
+// console.log(Math.PI) // 3.14
 // console.log(Number((2 * Math.PI * r).toFixed(2)));
