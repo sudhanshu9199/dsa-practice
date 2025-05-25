@@ -63,7 +63,7 @@
 // }
 
 
-// let num = Number(0.1 + 0.2);
+// let num = Number((0.1 + 0.2).toFixed(2));
 
 // switch(num) {
 //     case 0.3:
